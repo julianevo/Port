@@ -1,0 +1,149 @@
+.c {
+    position: relative;
+  }
+  
+  .c-wrapper {
+    padding: 1rem;
+    display: flex;
+  }
+  
+  .c-left {
+    flex: 1;
+  }
+  
+  .c-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    padding: 2%;
+  }
+  
+  .c-title {
+    font-size: 60px;
+    width: 80%;
+    margin-left: 5%;
+  }
+  
+  .c-info-item {
+    display: flex;
+    align-items: center;
+    margin: 65px 38px;
+    width: 70%;
+    font-size: medium;
+  }
+
+  .icons{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    font-weight: 300;
+    width: 20%;
+    margin: 10% 4.5%;
+  }
+
+  #linkedin{
+    box-shadow: 0 5px 20px rgb(37, 149, 204);
+    background: #fff;
+  }
+
+  #github{
+    box-shadow: 0 5px 20px rgb(37, 149, 204);
+    background: #fff;
+  }
+  
+  .c-icon {
+    width: 30px;
+    height: 30px;
+    margin-right: 20px;
+  }
+  
+  .c-desc {
+    font-weight: 200;
+  }
+  
+  form {
+    margin-top: 20px;
+    display: flex;
+    flex-flow: column wrap;
+  }
+  
+  input {
+    width: 50%;
+    height: 50px;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 5px;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    color: black;
+  }
+  
+  textarea {
+    width: 100%;
+    margin: 10px 0px;
+    font-size: 14px;
+    padding-left: 10px;
+    border-radius: 5px;
+  }
+
+  #message-btn{
+    margin-top: 1%;
+    border: black;
+    border-radius: 5px;
+    width: 10%;
+    background: dodgerblue;
+  }
+
+  .message-span{
+
+    font-size: medium;
+  }
+  
+  @media screen and (max-width: 480px) {
+    .c-wrapper {
+      flex-direction: column;
+      padding: 0px 50px;
+    }
+  
+    .c-title {
+      font-size: 30px;
+    }
+  
+    .c-info-item {
+      margin: 20px 0px;
+      width: 100%;
+    }
+  
+    .c-desc {
+      display: none;
+    }
+  
+    form {
+      margin-top: 0px;
+      display: flex;
+      flex-wrap: wrap;
+    }
+  
+    input {
+      width: 35%;
+      height: 40px;
+      margin: 10px;
+      margin-left: 0;
+    }
+
+  .message-span{
+    align-items: center;
+    background: #0e0e10;
+    border-radius: 6px;
+    display: flex;
+    justify-content: center;
+    height: 100%;
+    transition: background 0.5s ease;
+    width: 100%;
+  }
+
+  .message-btn:hover .message-span{
+    background:transparent;
+  }
+  }

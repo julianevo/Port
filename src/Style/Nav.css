@@ -1,0 +1,45 @@
+ .links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    font-size: xxx-large;
+  }
+
+  /* juliane vo's portfolio */
+ .logo{
+  margin-top: 1%;
+  }
+
+  
+  a{ 
+    padding: 0 5%;
+  }
+  
+  a:link, a:visited {
+  color: black;
+  }
+  
+  a:hover {
+    color:darkcyan !important;
+  }
+  
+  nav {
+    display:flex;
+    justify-content: space-evenly;
+  }
+  
+  #nav-contact {
+    background-color: transparent;
+    border: transparent;
+    font-size: xxx-large;
+    color: black;
+    padding: 0 18%;
+    height: 88%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  #nav-contact:hover {
+    color: darkcyan;
+  }

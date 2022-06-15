@@ -1,0 +1,117 @@
+.projects p, .figma p{
+    height: 60%;
+}
+
+.main-title{
+    text-align: center;
+    height: 700vh;
+}
+
+.container{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+}
+
+.container2{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: space-between;
+    margin: 0 8%;
+}
+
+.projects{
+    width: 27%;
+    height: 8%;
+    margin: 2% 10%;
+}
+
+.frontend{
+    border: 3px solid darkcyan;
+    border-radius: 10px;
+    height: 55vh;
+    text-align: center;
+}
+
+#front-end{
+    font-size: 500%;
+}
+
+#design{
+    font-size: 500%;
+    margin: 125% 0 0 0;
+}
+
+.title{
+    text-align: center;
+    padding: 25% 0;
+    font-size: xxx-large;
+}
+
+p{
+    font-size: large;
+}
+
+/* .bg-images{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    opacity: 0;
+    transition: .5s ease;
+} */
+
+/* .frontend:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: contain;
+    background: beige;
+} */
+
+/* .market:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: white;
+}
+
+.ecomm:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: 25% 50%;
+}
+
+.portfolio:hover .bg-images{
+    opacity: 1;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    object-fit: cover;
+    object-position: 50% 50%;
+} */
+
+.hashtags{
+    display: flex;
+    justify-content: space-around;
+}
+
+#arrow{
+    margin-bottom: 5%;
+}
+
+.pipe{
+    margin-top: -5%;
+}
