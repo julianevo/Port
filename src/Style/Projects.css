@@ -1,7 +1,3 @@
-.projects p, .figma p{
-    height: 60%;
-}
-
 .main-title{
     text-align: center;
     height: 700vh;
@@ -17,7 +13,11 @@
     display: flex;
     flex-flow: row wrap;
     justify-content: space-between;
-    margin: 0 8%;
+    margin: 10% 8% 0%;
+}
+
+p{
+    font-size: large;
 }
 
 .projects{
@@ -31,6 +31,8 @@
     border-radius: 10px;
     height: 55vh;
     text-align: center;
+    position: relative;
+    z-index: 0;
 }
 
 #front-end{
@@ -39,18 +41,50 @@
 
 #design{
     font-size: 500%;
-    margin: 125% 0 0 0;
+    margin: 130% 1% 0;
 }
 
 .title{
     text-align: center;
-    padding: 25% 0;
     font-size: xxx-large;
+    position: relative;
+    top: 25px;
 }
 
-p{
-    font-size: large;
+.hashtags{
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    top: 50px;
+    padding: 0 5%;
 }
+
+.ant-image{
+    opacity: 0;
+    z-index: 2;
+    position: fixed;
+    left: 0.1px;
+    border-radius: 10px;
+}
+
+.ant-btn{
+    background-color: #282c34;
+    border:none;
+    color: #ffffff;
+    position: relative;
+    top: 75px;
+  }
+
+.frontend:hover .ant-image{
+    opacity: 1;
+    position: absolute;
+    z-index: 1;
+}
+
+.frontend:nth-child(3){
+    border: 2px green;
+}
+
 
 /* .bg-images{
     position: absolute;
@@ -103,10 +137,9 @@ p{
     object-position: 50% 50%;
 } */
 
-.hashtags{
-    display: flex;
-    justify-content: space-around;
-}
+/* .projects p, .figma p{
+    height: 60%;
+} */
 
 #arrow{
     margin-bottom: 5%;
@@ -115,3 +148,5 @@ p{
 .pipe{
     margin-top: -5%;
 }
+
+

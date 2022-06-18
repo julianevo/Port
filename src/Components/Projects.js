@@ -4,7 +4,7 @@ import "antd/dist/antd.css";
 import '../Style/Projects.css'
 import ThemeContext from '../Themes/ThemeContext'
 import Pipe from '../Components/Pipe'
-import { Modal, Button } from 'antd';
+import { Modal, Button, Image } from 'antd';
 import { ProjectsData } from '../Data/Frontend'
 import { DesignData } from '../Data/Design';
 
@@ -42,11 +42,16 @@ return (
           <div className='projects' style={theme}>
 
           <div className='frontend'>
+
+            <div className='img-box'>
+              <Image src={project.image} width={345} height={342}/>
+            </div>
+
               <p style={theme} className='title'>{project.title}</p>
-                {/* <img className='bg-images' src={project.image} alt='hrf'/> */}
-                  <div className='hashtags'>
-                    <p style={theme}>{project.hashtags}</p>
-                  </div>
+
+                <div className='hashtags'>
+                  <p style={theme}>{project.hashtags}</p>
+                </div>
 
                   <Button type="primary" onClick={() => {
                     setModalData(project)
@@ -88,7 +93,7 @@ return (
             setModalData(project)
             showModal()
             }}>
-            More Details
+            More Info
           </Button>
 
           <Modal title={modalData.title} visible={isModalVisible} onOk={handleOk} onCancel={handleCancel}>
