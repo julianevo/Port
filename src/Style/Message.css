@@ -85,6 +85,7 @@
     font-size: 14px;
     padding-left: 10px;
     border-radius: 5px;
+    color: black;
   }
 
   #message-btn{
@@ -96,7 +97,6 @@
   }
 
   .message-span{
-
     font-size: medium;
   }
   
